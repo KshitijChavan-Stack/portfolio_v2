@@ -1,3 +1,4 @@
+'use client';
 import {
   Download,
   Github,
@@ -6,6 +7,9 @@ import {
   SunMedium,
   Twitter
 } from "lucide-react";
+
+
+
 
 const sections = [
   { id: "hero", label: "Home" },
