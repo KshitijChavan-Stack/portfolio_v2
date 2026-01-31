@@ -89,13 +89,13 @@ export default function HomePage() {
                   >
                     <Mail className="h-4 w-4" />
                   </a>
-                  <button
+                  {/* <button
                     type="button"
                     className="inline-flex items-center justify-center h-9 w-9 rounded-full border border-neutral-700 bg-neutral-900/80 text-neutral-300 hover:bg-neutral-800 hover:text-neutral-400 transition-colors"
                     aria-label="Toggle theme"
                   >
                     <SunMedium className="h-4 w-4" />
-                  </button>
+                  </button> */}
                   <a
                     href="/Users/kshitijmaheshchavan/Desktop/PortfolioV2/portfolio-app/KshitijChavan_Resume_WTTJ(1).pdf"
                     download="/KshitijChavan_Resume_WTTJ(1).pdf"
