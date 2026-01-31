@@ -40,7 +40,7 @@ export default function HomePage() {
               <a
                 key={section.id}
                 href={`#${section.id}`}
-                className="text-neutral-300 hover:text-sky-400 transition-colors"
+                className="text-neutral-300 hover:text-amber-400 transition-colors"
               >
                 {section.label}
               </a>
