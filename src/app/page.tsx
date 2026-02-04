@@ -1,4 +1,6 @@
 'use client';
+import Image from "next/image";
+import memoji from "../../images/memoji.png";
 import {
   Download,
   Github,
@@ -7,10 +9,6 @@ import {
   SunMedium,
   Twitter
 } from "lucide-react";
-
-
-
-
 const sections = [
   { id: "hero", label: "Home" },
   { id: "skills", label: "Skills" },
@@ -56,15 +54,13 @@ export default function HomePage() {
         >
           <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center md:items-start">
             <div className="relative flex-shrink-0 h-28 w-28 md:h-32 md:w-32 rounded-full border border-neutral-700 bg-neutral-800 overflow-hidden">
-              {/* Replace this with a real profile image */}
-              <div className="h-full w-full flex items-center justify-center">
-  {/* <img 
-    src="/images/memoji.png" 
-    alt="Memoji"
-    className="w-40 h-40 rounded-full"
-  /> */} 
-  K
-</div>
+              <Image
+                src={memoji}
+                alt="Memoji"
+                fill
+                sizes="128px"
+                className="object-cover"
+              />
             </div>
 
             <div className="flex-1 space-y-4">
@@ -97,8 +93,9 @@ export default function HomePage() {
                     <SunMedium className="h-4 w-4" />
                   </button> */}
                   <a
-                    href="/Users/kshitijmaheshchavan/Desktop/PortfolioV2/portfolio-app/KshitijChavan_Resume_WTTJ(1).pdf"
-                    download="/KshitijChavan_Resume_WTTJ(1).pdf"
+                    href="/KshitijChavan_4Feb_Resume.pdf"
+                    target="_blank"
+                    rel="noreferrer"
                     className="inline-flex items-center gap-2 rounded-full bg-neutral-50 text-neutral-900 px-4 py-2 text-sm font-medium hover:bg-neutral-200 transition-colors"
                   >
                     <span>Resume</span>
@@ -167,11 +164,11 @@ export default function HomePage() {
             
             <SkillRow
               label="Frontend"
-              skills={["HTML", "CSS", "JavaScript", "React"]}
+              skills={["HTML", "CSS", "JavaScript", "React", "React Native"]}
             />
             <SkillRow
               label="Backend"
-              skills={["Python (FastAPI)", "Next.js", "Node.js", "Express.js"]}
+              skills={["Python (FastAPI)", "Node.js", "Express.js"]}
             />
             <SkillRow
               label="Databases"
@@ -217,6 +214,20 @@ export default function HomePage() {
             Projects
           </h2>
           <div className="space-y-4">
+          <ProjectCard
+              title="CHRONOS"
+              subtitle="Production ready Chrome extension · Feb 2026"
+              bullets={[
+                "Architected end-to-end Chrome extension with real-time tab tracking, dual-view analytics dashboard,and domain-based time aggregation shipped production-ready MVP with 1KB memory and 50ms latency",
+                "Led product strategy identifying USD 1.2B market opportunity; differentiated against RescueTime/Toggl on privacy-first positioning; executed dual-distribution GTM (Web Store + GitHub) with zero CAC",
+                "Engineered security-hardened codebase: XSS prevention (HTML escaping), CSP Manifest V3 compliance (Chart.js bundling + event listener refactoring), error handling; 100 percent security audit pass",
+              ]}
+              tech={[
+                "JavaScript (ES6+)",
+                "Chart.js",
+                "Chrome Extension APIs (Manifest V3",
+              ]}
+            />
             <ProjectCard
               title="HubSpot Integration Platform"
               subtitle="OAuth 2.0 based SaaS integration system · Dec 2025"
