@@ -93,7 +93,7 @@ export default function HomePage() {
                     <SunMedium className="h-4 w-4" />
                   </button> */}
                   <a
-                    href="/KshitijChavan_4Feb_Resume.pdf"
+                    href="/kshitij_Resume_18June_updated_.pdf"
                     target="_blank"
                     rel="noreferrer"
                     className="inline-flex items-center gap-2 rounded-full bg-neutral-50 text-neutral-900 px-4 py-2 text-sm font-medium hover:bg-neutral-200 transition-colors"
